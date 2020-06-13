@@ -22,6 +22,13 @@ let siblings = {siblings: ["brad","holly","James"]}
     acceptobject({})
   //Iterating over an object
     for (key in famo){ famo[key] }
+  //Checking two objects for equality
+    JSON.stringify(famo) === JSON.stringify(famo)
+  //Using computed values to change an array of arrays to an array of hashes
+    [[1,2],[3,4]].map( ([key,val]) => ({[key]: val}) )
+  //Destructuring properties from an array of hashes
+    [{me: "matthew"}, {you: "michelle"}].map(({me,you}) => me || you )
+
 
 
 

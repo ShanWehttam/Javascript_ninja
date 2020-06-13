@@ -17,6 +17,9 @@ let siblings = {siblings: ["brad","holly","James"]}
     if ('dad' in famo) { "do something if property key exists" }
     if (famo.dad) { "do something if property key exists" }
     if (famo['dad']) { "do something if property key exists" }
+  //Writing a function that accepts an object as an argument, deconstructs it and has a default argument
+    function acceptobject({me, you="you"}){ return you }
+    acceptobject({})
 
 
 

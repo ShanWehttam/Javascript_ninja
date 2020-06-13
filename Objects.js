@@ -13,6 +13,12 @@ let siblings = {siblings: ["brad","holly","James"]}
     famo['brother'] = "brad"
   //Deleteing a property from an object
     delete famo['brother']
+  //Checking if a property is present in an object
+    if ('dad' in famo) { "do something if property key exists" }
+    if (famo.dad) { "do something if property key exists" }
+    if (famo['dad']) { "do something if property key exists" }
+
+
 
 
 

@@ -28,6 +28,8 @@ let siblings = {siblings: ["brad","holly","James"]}
     [[1,2],[3,4]].map( ([key,val]) => ({[key]: val}) )
   //Destructuring properties from an array of hashes
     [{me: "matthew"}, {you: "michelle"}].map(({me,you}) => me || you )
+  //Pretify an object or the returning JSON
+    JSON.stringify(famo, ['dad', 'mum'], "\t")
 
 
 

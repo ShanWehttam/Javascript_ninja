@@ -27,7 +27,19 @@
 //The prototype is like the interface
   instance_methods = Object.getOwnPropertyNames(‘me’.__proto__) // get functions and properties that were instantiated outside the class/constructor
   instance_methods2 = Object.getOwnPropertyNames(String.prototype) // get functions and properties that were instantiated outside the class/constructor
-//
+//don’t be scared to return from a function early
+  If (something){
+    return 
+  }
+//try catch throw and finally
+  if (something) {
+    throw {message: ‘this is an error’}
+  }
+//Try catch for code that might fail, only suitable for maybe network requests.  Don’t wrap anything else into try coz its bad performance
+//Only put code into a try catch block that I can’t control.  I can’t control if the user enters the wrong data type into a field.  Nor can I control the wifi strength of the client network
+
+
+
 
 
 
